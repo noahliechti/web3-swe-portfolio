@@ -27,10 +27,10 @@ I decided to go with a static webpage, that gets rendered on the server-side. Th
 It was challenging for my to decide in the beginning what technologies I want to use Building an app from scratch was an unusual task. Nevertheless I wanted a solid foundation.
 
 ### Solutions
-### Bundler
-Webpack vs Rollup
-### Package manager
-npm vs yarn
+#### Bundl: Webpack vs Rollup vs Parcel
+I decided to go with Parvel for reasons XY.
+article -> https://blog.bitsrc.io/choosing-the-right-javascript-bundler-in-2020-f9b1eae0d12b
+#### Package manager: npm vs yarn
 ### Learnings
 ## License
 This project is licensed under the terms of the **XY** license.
