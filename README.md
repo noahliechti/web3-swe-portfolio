@@ -24,7 +24,13 @@ My approach is to only use native tools. In addition I want to offer fast loadin
 I decided to go with a static webpage, that gets rendered on the server-side. This enables a fast initial load and the crawlers can directly parse the information (SEO).
 #### UX/UI
 ### Challenges
+It was challenging for my to decide in the beginning what technologies I want to use Building an app from scratch was an unusual task. Nevertheless I wanted a solid foundation.
+
 ### Solutions
+### Bundler
+Webpack vs Rollup vs Babel
+### Package manager
+npm vs yarn
 ### Learnings
 ## License
 This project is licensed under the terms of the **XY** license.
