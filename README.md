@@ -1,4 +1,4 @@
-# personal-project-template
+# Welcome to my portfolio 👨🏽‍🎨
 <!--replace `XY` with the real licence name-->
 <!--![Current Version](https://img.shields.io/github/package-json/v/NoahLiechti/dev-portfolio?style=social)-->
 <!--[![Licence](https://img.shields.io/github/license/NoahLiechti/my-projec?style=social)](https://github.com/NoahLiechti/dev-portfolio/blob/main/LICENSE)-->
