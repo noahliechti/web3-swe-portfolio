@@ -28,7 +28,7 @@ It was challenging for my to decide in the beginning what technologies I want to
 
 ### Solutions
 ### Bundler
-Webpack vs Rollup vs Babel
+Webpack vs Rollup
 ### Package manager
 npm vs yarn
 ### Learnings
