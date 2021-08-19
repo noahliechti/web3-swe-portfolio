@@ -1,0 +1,12 @@
+{
+  "name": "dev-portfolio",
+  "version": "0.1.0",
+  "description": "Noah's developer portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": "https://github.com/NoahLiechti/dev-portfolio.git",
+  "author": "Noah Liechti <noah.liechti@gmail.com>",
+  "license": "MIT"
+}
