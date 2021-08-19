@@ -32,7 +32,10 @@ I decided to go with Parcel for reasons XY.
 article -> https://blog.bitsrc.io/choosing-the-right-javascript-bundler-in-2020-f9b1eae0d12b
 #### Package manager: npm vs yarn
 yarn
+#### Hosting: Netlify vs XY
+
 ### Learnings
+CI/CD
 ## License
 This project is licensed under the terms of the **XY** license.
 
