@@ -21,22 +21,21 @@ My approach is to only use native tools. In addition I want to offer fast loadin
 - CSS3
 - HTML5
 #### Architecture
-I decided to go with a static webpage, that gets rendered on the server-side. This enables a fast initial load and the crawlers can directly parse the information (SEO).
+I decided to go with a static webpage. There was just no need for something dynamic. In addition my website will be fast and SEO friendly out the box
 #### UX/UI
 ### Challenges
 It was challenging for my to decide in the beginning what technologies I want to use Building an app from scratch was an unusual task. Nevertheless I wanted a solid foundation.
-
 ### Solutions
 #### Bundl: Webpack vs Rollup vs Parcel
 I decided to go with Parcel for reasons XY.
 article -> https://blog.bitsrc.io/choosing-the-right-javascript-bundler-in-2020-f9b1eae0d12b
 #### Package manager: npm vs yarn
-yarn
+
 #### Hosting: Netlify vs XY
 
 ### Learnings
-CI/CD
+- CI/CD
 ## License
-This project is licensed under the terms of the **XY** license.
+This project is licensed under the terms of the **MIT** license.
 
 You can check out the full license [here](https://github.com/NoahLiechti/dev-portfolio/blob/main/LICENSE).
