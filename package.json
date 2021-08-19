@@ -4,7 +4,7 @@
   "description": "Noah's developer portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "parcel src/index.html"
   },
   "repository": "https://github.com/NoahLiechti/dev-portfolio.git",
   "author": "Noah Liechti <noah.liechti@gmail.com>",
@@ -13,5 +13,8 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
   }
 }
