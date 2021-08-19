@@ -34,6 +34,6 @@ article -> https://blog.bitsrc.io/choosing-the-right-javascript-bundler-in-2020-
 yarn
 ### Learnings
 ## License
-This project is licensed under the terms of the **XY** license.
+This project is licensed under the terms of the **MIT** license.
 
 You can check out the full license [here](https://github.com/NoahLiechti/dev-portfolio/blob/main/LICENSE).
