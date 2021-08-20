@@ -11,7 +11,6 @@
 <!--e.g registration-->
 ## Illustrations
 <!--e.g screenshots -->
-## Usage
 ## Review
 ### Problem Statement
 I want to build a personal portfolio where I can showcase projects and people can connect with me.
