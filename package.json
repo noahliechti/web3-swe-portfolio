@@ -2,11 +2,9 @@
   "name": "dev-portfolio",
   "version": "0.1.0",
   "description": "Noah's developer portfolio",
-  "main": "src/index.js",
   "source": "src/index.html",
-  "browserslist": "supports es6-module",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel --open chrome",
     "build": "parcel build"
   },
   "repository": "https://github.com/NoahLiechti/dev-portfolio.git",
