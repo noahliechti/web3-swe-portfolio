@@ -15,13 +15,13 @@
 ### Problem Statement
 I want to build a personal portfolio where I can showcase projects and people can connect with me.
 ### Approach
-My approach is to only use native tools. In addition I want to offer fast loading speeds and a great UX.
+My approach is to only use native tools. In addition I want to offer fast loading speeds and a great UX. The code won't be transpiled to ES5, so there will be no support for IE 11 and Opera Mini.
 #### Stack
-- VanillaJS
+- ES2015 JavaScript
 - CSS3
 - HTML5
 #### Architecture
-I decided to go with a static webpage, that gets rendered on the server-side. This enables a fast initial load and the crawlers can directly parse the information (SEO).
+I decided to go with a static webpage. There was just no need for something dynamic. In addition my website will be fast and SEO friendly out the box
 #### UX/UI
 ### Challenges
 It was challenging for my to decide in the beginning what technologies I want to use Building an app from scratch was an unusual task. Nevertheless I wanted a solid foundation.
@@ -29,9 +29,12 @@ It was challenging for my to decide in the beginning what technologies I want to
 #### Bundler: Webpack vs Rollup vs Parcel
 I decided to go with Parcel for reasons XY.
 article -> https://blog.bitsrc.io/choosing-the-right-javascript-bundler-in-2020-f9b1eae0d12b
-#### Package Manager: npm vs yarn
-yarn
+#### Package manager: npm vs yarn
+
+#### Hosting: Netlify vs XY
+
 ### Learnings
+- CI/CD
 ## License
 This project is licensed under the terms of the **MIT** license.
 
