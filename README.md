@@ -1,7 +1,7 @@
 # Welcome to my portfolio 👨🏽‍🎨
 <!--replace `XY` with the real licence name-->
 <!--![Current Version](https://img.shields.io/github/package-json/v/NoahLiechti/dev-portfolio?style=social)-->
-[![Licence](https://img.shields.io/github/license/NoahLiechti/my-projec?style=social)](https://github.com/NoahLiechti/dev-portfolio/blob/main/LICENSE)
+[![Licence](https://img.shields.io/badge/License-MIT-green.svg?style=social)](https://github.com/NoahLiechti/dev-portfolio/blob/main/LICENSE)
 [![Live Demo](https://img.shields.io/badge/Live&nbsp;Preview-Click&nbsp;Me-green.svg?style=social)](trusting-williams-929684.netlify.app)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8e44bafe-1d33-4389-90c5-ec2034a30dc6/deploy-status)](https://app.netlify.com/sites/trusting-williams-929684/deploys)
 ## Status
