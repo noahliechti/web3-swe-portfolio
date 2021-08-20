@@ -26,7 +26,7 @@ I decided to go with a static webpage. There was just no need for something dyna
 ### Challenges
 It was challenging for my to decide in the beginning what technologies I want to use Building an app from scratch was an unusual task. Nevertheless I wanted a solid foundation.
 ### Solutions
-#### Bundl: Webpack vs Rollup vs Parcel
+#### Bundler: Webpack vs Rollup vs Parcel
 I decided to go with Parcel for reasons XY.
 article -> https://blog.bitsrc.io/choosing-the-right-javascript-bundler-in-2020-f9b1eae0d12b
 #### Package manager: npm vs yarn
