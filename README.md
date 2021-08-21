@@ -23,6 +23,9 @@ My approach is to only use native tools. In addition I want to offer fast loadin
 #### Architecture
 I decided to go with a static webpage. There was just no need for something dynamic. In addition my website will be fast and SEO friendly out the box
 #### UX/UI
+##### Wireframes
+![Mobile](https://user-images.githubusercontent.com/38284563/130324938-b18676a9-61cf-4ae1-b93d-e218b246ff17.png)
+
 ### Challenges
 It was challenging for my to decide in the beginning what technologies I want to use Building an app from scratch was an unusual task. Nevertheless I wanted a solid foundation.
 ### Solutions
