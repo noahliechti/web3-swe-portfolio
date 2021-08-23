@@ -1,0 +1,53 @@
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* height: 50px; */
+  /* padding: 0 15px; */
+}
+
+.header * {
+  display: inline;
+}
+
+body {
+  margin-top: 50px; /* same as header height */
+  padding: 15px;
+}
+
+.menu-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  height: 48px; /* TODO: better solution? */
+  padding: 0 6px;
+}
+
+.logo {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.darkmode {
+  background-color: #000;
+  color: #fff;
+}
+
+/* .darkmode svg {
+  color: #fff;
+  fill: currentColor;
+} */
+
+/* testing */
+body {
+  background-color: grey;
+}
