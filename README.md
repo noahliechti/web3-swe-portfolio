@@ -38,6 +38,7 @@ article -> https://blog.bitsrc.io/choosing-the-right-javascript-bundler-in-2020-
 
 ### Learnings
 - CI/CD
+- Accessible SVG's
 ## License
 This project is licensed under the terms of the **MIT** license.
 
