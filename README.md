@@ -15,7 +15,7 @@
 ### Problem Statement
 I want to build a personal portfolio where I can showcase projects and people can connect with me.
 ### Approach
-My approach is to only use native tools. In addition I want to offer fast loading speeds and a great UX. The code won't be transpiled to ES5, so there will be no support for IE 11 and Opera Mini.
+My approach is to only use native tools. In addition I want to offer fast loading speeds and a great UX. The page should be accessible and look the same on every browser. There will be no support for IE 11 and Opera Mini.
 #### Stack
 - ES2015 JavaScript
 - CSS3
