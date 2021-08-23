@@ -1,4 +1,14 @@
-.header {
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
+body {
+  margin-top: 50px; /* same as header height */
+  padding: 15px;
+  color: #222;
+  fill: #222;
+  font-family: "Patrick Hand SC";
+}
+/* --- top-header ---------------------------------------------------------- */
+.top-header {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -7,26 +17,44 @@
   top: 0;
   left: 0;
   right: 0;
-  /* height: 50px; */
-  /* padding: 0 15px; */
 }
 
-.header * {
+.top-header * {
   display: inline;
 }
-
-body {
-  margin-top: 50px; /* same as header height */
-  padding: 15px;
+/* --- buttons ------------------------------------------------------------- */
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
 
 .menu-button {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0;
   height: 48px; /* TODO: better solution? */
   padding: 0 6px;
+}
+
+.hand-drawn-button {
+  padding: 5px 15px;
+  align-self: center;
+  color: #222;
+  font-size: 25px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 7px 7px 0 #222;
+  border: solid 6px #222;
+}
+
+.hand-drawn-button:active {
+  box-shadow: 3px 3px 0 #222;
+  transform: translate(4px, 4px);
 }
 
 .logo {
@@ -37,17 +65,18 @@ body {
   display: none;
 }
 
+/* --- testing ------------------------------------------------------------- */
+.top-header {
+  border-bottom: 1px solid #222;
+}
+
 .darkmode {
-  background-color: #000;
+  background-color: #222;
   color: #fff;
+  opacity: 0.87; /* recommended in https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6 */
 }
 
 /* .darkmode svg {
   color: #fff;
   fill: currentColor;
 } */
-
-/* testing */
-body {
-  background-color: grey;
-}
