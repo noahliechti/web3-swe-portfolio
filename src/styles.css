@@ -19,12 +19,13 @@ body {
   left: 0;
   right: 0;
   height: 48px;
+  z-index: 1;
 }
 .top-header * {
   display: inline;
 }
 .menu-button {
-  height: 48px; /* TODO: better solution? */
+  height: 48px;
   padding: 0 6px;
 }
 /* --- home ---------------------------------------------------------------- */
@@ -52,6 +53,11 @@ body,
   transform: translate(-50%, -50%);
 }
 /* --- buttons ------------------------------------------------------------- */
+a {
+  display: block;
+  text-decoration: none;
+  width: fit-content;
+}
 button {
   background: transparent;
   border: none;
@@ -66,7 +72,6 @@ button {
   padding: 8px 16px;
   align-self: center;
   color: currentColor;
-  font-size: 22px;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   box-shadow: 7px 7px 0 currentColor;
   border: solid 6px currentColor;
@@ -88,11 +93,11 @@ button {
 }
 /* --- testing ------------------------------------------------------------- */
 .top-header {
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid currentColor;
 }
 
 .darkmode {
-  background-color: #222;
+  background-color: currentColor;
   color: #fff;
   opacity: 0.87; /* recommended in https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6 */
 }
