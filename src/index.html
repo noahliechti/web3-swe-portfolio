@@ -26,17 +26,28 @@
     <nav class="hidden">
       <!-- nav links or "scroll bar"-->
       <ul>
-        <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div>
       <!-- content -->
       <main>
-        <header>
-          <p>Hi, my name is <span>Noah Liechti.</span></p>
-          <pre><code>&ltSoftware Engineer/&gt</code></pre>
+        <header class="home">
+          <p>Hi, my name is <span class="strong">Noah Liechti.</span></p>
+          <p>
+            I'm a <code>&lt<span class="">software-engineer class="web-developer"</span>/&gt</code>.
+            I like to challenge myself and grow every day.
+          </p>
+          <button class="hand-drawn-button">Get In Touch</button>
+          <button class="expand-more-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="48px"  width="48px" fill="none"><title>expand more</title><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path fill="currentColor" d="M15.88 9.29L12 13.17 8.12 9.29c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.39-1.42 0z"/></svg>
+          </button>
+        </header>
+        <section>
+          <h1 id="about">About Me</h1>
           <p>
             It all started with a software engineering apprenticeship at axa.ch
             back in 2015. I was lucky enough to undergo a very good training.
@@ -50,9 +61,7 @@
           <p>
             Currently, I am studying computer science at the ZHAW in Winterthur.
           </p>
-          <p>I like to challenge myself and grow every day.</p>
-          <button class="hand-drawn-button">Get In Touch</button>
-        </header>
+        </section>
         <section>
           <h1 id="projects">Recent Projects</h1>
           <article>
@@ -79,7 +88,7 @@
           <h1 id="contact">Say Hello</h1>
         </section>
       </main>
-      <footer>
+      <footer class="footer">
         <!-- icon for github, linkedin and mail -->
         <small>Designed & built by Noah Liechti</small>
       </footer>

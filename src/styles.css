@@ -1,11 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
-
+/* --- global -------------------------------------------------------------- */
 body {
-  margin-top: 50px; /* same as header height */
-  padding: 15px;
+  margin: 48px 24px 24px 24px; /* same as header height */
+  padding-top: 8px;
   color: #222;
   fill: #222;
   font-family: "Patrick Hand SC";
+  font-size: 21px;
 }
 /* --- top-header ---------------------------------------------------------- */
 .top-header {
@@ -17,10 +18,38 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  height: 48px;
 }
-
 .top-header * {
   display: inline;
+}
+.menu-button {
+  height: 48px; /* TODO: better solution? */
+  padding: 0 6px;
+}
+/* --- home ---------------------------------------------------------------- */
+.strong {
+  display: block;
+  font-weight: bold;
+  font-size: 60px;
+}
+code {
+  font: inherit;
+  font-weight: bold;
+}
+html,
+body,
+.home {
+  height: 100vh;
+}
+.expand-more-button {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 48px;
+  padding: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* --- buttons ------------------------------------------------------------- */
 button {
@@ -33,38 +62,30 @@ button {
   line-height: 1.15;
   margin: 0;
 }
-
-.menu-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  height: 48px; /* TODO: better solution? */
-  padding: 0 6px;
-}
-
 .hand-drawn-button {
-  padding: 5px 15px;
+  padding: 8px 16px;
   align-self: center;
-  color: #222;
-  font-size: 25px;
+  color: currentColor;
+  font-size: 22px;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  box-shadow: 7px 7px 0 #222;
-  border: solid 6px #222;
+  box-shadow: 7px 7px 0 currentColor;
+  border: solid 6px currentColor;
 }
-
 .hand-drawn-button:active {
   box-shadow: 3px 3px 0 #222;
   transform: translate(4px, 4px);
 }
-
+/* --- todo -------------------------------------------------------------- */
+.footer {
+  display: flex;
+  justify-content: center;
+}
 .logo {
   margin: 0;
 }
-
 .hidden {
   display: none;
 }
-
 /* --- testing ------------------------------------------------------------- */
 .top-header {
   border-bottom: 1px solid #222;
