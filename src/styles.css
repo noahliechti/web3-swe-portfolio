@@ -68,6 +68,29 @@ code {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* --- navigation ---------------------------------------------------------- */
+.navigation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigation > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.navigation > ul > li {
+  padding: 8px 0;
+}
+.navigation > ul > li > a {
+  color: currentColor;
+  width: auto;
+  font-size: 30px;
+}
 /* --- projects ------------------------------------------------------------ */
 .project {
   border: 3px solid currentColor;
