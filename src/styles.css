@@ -22,6 +22,7 @@ body {
   left: 0;
   right: 0;
   height: 68px;
+  padding-top: 8px;
   /* z-index: 1; */
 }
 .top-header * {
@@ -31,9 +32,11 @@ body {
   padding: 0 6px;
   height: 48px;
   margin-right: 12px;
+  color: currentColor;
 }
 .logo {
   margin-left: 24px;
+  color: currentColor; /* TODO: doesn't work, because it's inline */
 }
 /* --- home ---------------------------------------------------------------- */
 .home {
@@ -67,6 +70,7 @@ code {
   padding: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: currentColor;
 }
 /* --- navigation ---------------------------------------------------------- */
 .navigation {
@@ -133,11 +137,25 @@ button {
   box-shadow: 3px 3px 0 #222;
   transform: translate(4px, 4px);
 }
-/* --- todo -------------------------------------------------------------- */
+/* --- footer -------------------------------------------------------------- */
 .footer {
   display: flex;
   justify-content: center;
 }
+.footer > small {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+/* --- darkmode ------------------------------------------------------------ */
+.darkmode {
+  background-color: #222;
+  color: #fff;
+  opacity: 0.87; /* recommended in https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6 */
+}
+.darkmode > .top-header {
+  background-color: #222;
+}
+/* --- todo ---------------------------------------------------------------- */
 .hidden {
   display: none;
 }
@@ -145,12 +163,3 @@ button {
 .top-header {
   /* border-bottom: 1px solid currentColor; */
 }
-.darkmode {
-  background-color: currentColor;
-  color: #fff;
-  opacity: 0.87; /* recommended in https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6 */
-}
-/* .darkmode svg {
-  color: #fff;
-  fill: currentColor;
-} */
