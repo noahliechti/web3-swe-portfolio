@@ -114,8 +114,6 @@ code {
 .project > .links > a {
   width: auto;
   color: currentColor;
-}
-.project > .links > a > svg {
   margin-left: 8px;
 }
 /* --- footer -------------------------------------------------------------- */
@@ -131,7 +129,8 @@ code {
 .footer-links > a {
   width: auto;
   color: currentColor;
-  padding: 0 2px;
+  margin: 0 2px;
+  height: 60px;
 }
 .footer > small {
   font-size: 19px;
