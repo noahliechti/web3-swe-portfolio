@@ -63,6 +63,7 @@ code {
   font-weight: bold;
 }
 .expand-more-button {
+  width: auto;
   display: block;
   position: absolute;
   bottom: 0;
@@ -117,6 +118,25 @@ code {
 .project > .links > a > svg {
   margin-left: 8px;
 }
+/* --- footer -------------------------------------------------------------- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+}
+.footer-links > a {
+  width: auto;
+  color: currentColor;
+  padding: 0 2px;
+}
+.footer > small {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
 /* --- buttons ------------------------------------------------------------- */
 a {
   display: block;
@@ -146,24 +166,6 @@ button {
 .hand-drawn-button:active {
   box-shadow: 3px 3px 0 #222;
   transform: translate(4px, 4px);
-}
-/* --- footer -------------------------------------------------------------- */
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer-links {
-  display: flex;
-}
-.footer-links > a {
-  width: auto;
-  color: currentColor;
-}
-.footer > small {
-  font-size: 19px;
-  margin-bottom: 8px;
 }
 /* --- darkmode ------------------------------------------------------------ */
 .darkmode {
