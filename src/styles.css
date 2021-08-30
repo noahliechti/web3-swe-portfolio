@@ -97,14 +97,25 @@ code {
 }
 /* --- projects ------------------------------------------------------------ */
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 3px solid currentColor;
   margin-bottom: 21px;
-  padding: 8px 8px 48px 48px;
-  height: 250px; /* TODO: make same as width? */
+  padding: 24px 24px 48px 48px;
+  height: 220px; /* TODO: make same as width? */
 }
-.show-more {
-  margin-left: auto;
-  margin-right: auto;
+.project > .links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.project > .links > a {
+  width: auto;
+  color: currentColor;
+}
+.project > .links > a > svg {
+  margin-left: 8px;
 }
 /* --- buttons ------------------------------------------------------------- */
 a {
@@ -118,7 +129,6 @@ button {
   background: transparent; /* TODO: make white? */
   border: none;
   cursor: pointer;
-  outline: none;
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -131,7 +141,7 @@ button {
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   box-shadow: 7px 7px 0 currentColor;
   border: solid 6px currentColor;
-  margin: 40px 0;
+  margin: 40px auto;
 }
 .hand-drawn-button:active {
   box-shadow: 3px 3px 0 #222;
