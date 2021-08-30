@@ -150,7 +150,16 @@ button {
 /* --- footer -------------------------------------------------------------- */
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+}
+.footer-links > a {
+  width: auto;
+  color: currentColor;
 }
 .footer > small {
   font-size: 19px;
