@@ -96,6 +96,10 @@ code {
   width: auto;
   font-size: 30px;
 }
+.inline-link {
+  color: currentColor;
+  /* text-shadow: 1px 1px 2px currentColor; */
+}
 /* --- projects ------------------------------------------------------------ */
 .project {
   display: flex;
@@ -137,10 +141,10 @@ code {
   margin-bottom: 8px;
 }
 /* --- buttons ------------------------------------------------------------- */
-a {
+a.hand-drawn-button {
   display: block;
-  text-decoration: none;
   width: 98px;
+  text-decoration: none;
   /* width: fit-content; TODO: doesn't work in FF */
 }
 button {
