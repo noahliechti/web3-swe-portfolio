@@ -16,3 +16,14 @@ function toggle(elements) {
     }
   }
 }
+
+function toggle_theme() {
+  let app = document.querySelector("body");
+  if (localStorage.theme == "dark") {
+    localStorage.theme = "light";
+    app.classList.remove("dark-mode");
+  } else {
+    localStorage.theme = "dark";
+    app.classList.add("dark-mode");
+  }
+}

@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <!-- <body class="darkmode"> -->
   <body>
+    <script>
+      let app = document.querySelector("body");
+      if (localStorage.theme == "dark") {
+        app.classList.add("dark-mode");
+      }
+  </script>
     <header class="top-header">
       <!-- logo and nav/close icon-->
       <!-- svg vs html icons, wrapped in a button or not -->
@@ -31,6 +36,10 @@
         <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
       </ul>
+      <button class="toggle-theme-button" aria-label="toggle theme" onclick="toggle_theme()">
+        <span></span>
+        <span></span>
+	    </button> 
     </nav>
     <div class="content js-content">
       <main>

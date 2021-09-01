@@ -10,6 +10,7 @@ body {
   fill: #222;
   font-family: "Patrick Hand SC";
   font-size: 21px;
+  transition: background-color 0.3s;
 }
 /* --- top-header ---------------------------------------------------------- */
 .top-header {
@@ -24,7 +25,7 @@ body {
   height: 68px;
   padding-top: 8px;
   transition: top 0.3s;
-  /* z-index: 1; */
+  transition: background-color 0.3s;
 }
 .top-header * {
   display: inline;
@@ -100,7 +101,6 @@ code {
 }
 .inline-link {
   color: currentColor;
-  /* text-shadow: 1px 1px 2px currentColor; */
 }
 /* --- projects ------------------------------------------------------------ */
 .project {
@@ -172,13 +172,54 @@ button {
   box-shadow: 3px 3px 0 #222;
   transform: translate(4px, 4px);
 }
-/* --- darkmode ------------------------------------------------------------ */
-.darkmode {
+
+.toggle-theme-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  /* border: 1px solid rgba(255, 255, 255, 0); */ /* TODO: neede? */
+}
+.toggle-theme-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #222;
+  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+.toggle-theme-button span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+/* --- dark-mode ----------------------------------------------------------- */
+body.dark-mode {
   background-color: #222;
   color: #fff;
-  opacity: 0.87; /* recommended in https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6 */
+  opacity: 0.87;
 }
-.darkmode > .top-header {
+body.dark-mode > .top-header {
+  background-color: #222;
+}
+body.dark-mode .toggle-theme-button span:nth-child(1) {
+  background-color: #fff;
+  opacity: 0.87;
+}
+body.dark-mode .toggle-theme-button span:nth-child(2) {
+  left: 65px;
   background-color: #222;
 }
 /* --- todo ---------------------------------------------------------------- */
