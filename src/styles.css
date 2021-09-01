@@ -23,6 +23,7 @@ body {
   right: 0;
   height: 68px;
   padding-top: 8px;
+  transition: top 0.3s;
   /* z-index: 1; */
 }
 .top-header * {
@@ -72,6 +73,7 @@ code {
   left: 50%;
   transform: translate(-50%, -50%);
   color: currentColor;
+  transition: opacity 1s;
 }
 /* --- navigation ---------------------------------------------------------- */
 .navigation {

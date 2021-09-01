@@ -123,6 +123,29 @@
         <small>designed & built by Noah Liechti</small>
       </footer>
     </div>
+    <script>
+      let prevPos = window.pageYOffset;
+      window.onscroll = function() {
+      let currentPos = window.pageYOffset;
+        if (prevPos > currentPos) {
+          // user scrolled up -> show menu
+          document.querySelector(".top-header").style.top = "0";
+        } else {
+          // user scrolled down -> hide menu
+          document.querySelector(".top-header").style.top = "-76px";
+        }
+        if (currentPos > 10) {
+          // user scrolls down 10px or more -> hide icon
+          document.querySelector(".expand-more-button").style.opacity = 0;
+          document.querySelector(".expand-more-button").style.visibility = "hidden";
+        } else {
+          // user is within the first 10px of the site -> show icon
+          document.querySelector(".expand-more-button").style.opacity = 1;
+          document.querySelector(".expand-more-button").style.visibility = "visible";
+        }
+        prevPos = currentPos;
+      }
+    </script>
     <script src="index.js"></script>
   </body>
 </html>
