@@ -17,7 +17,7 @@ function toggle(elements) {
   }
 }
 
-function toggle_theme() {
+function toggleTheme() {
   let app = document.querySelector("body");
   if (localStorage.theme == "dark") {
     localStorage.theme = "light";

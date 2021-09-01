@@ -2,7 +2,7 @@
 /* --- global -------------------------------------------------------------- */
 html,
 body {
-  height: 100%; /* TODO: Needed? */
+  height: 100%;
 }
 body {
   margin: 0 24px 24px 24px;
@@ -10,7 +10,13 @@ body {
   fill: #222;
   font-family: "Patrick Hand SC";
   font-size: 21px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
+}
+.header {
+  padding-top: 16px;
+}
+.inline-link {
+  color: currentColor;
 }
 /* --- top-header ---------------------------------------------------------- */
 .top-header {
@@ -24,8 +30,7 @@ body {
   right: 0;
   height: 68px;
   padding-top: 8px;
-  transition: top 0.3s;
-  transition: background-color 0.3s;
+  transition: top 0.3s, background-color 0.3s;
 }
 .top-header * {
   display: inline;
@@ -38,7 +43,9 @@ body {
 }
 .logo {
   margin-left: 24px;
-  color: currentColor; /* TODO: doesn't work, because it's inline */
+}
+.logo a {
+  color: currentColor;
 }
 /* --- home ---------------------------------------------------------------- */
 .home {
@@ -63,6 +70,9 @@ code {
   font: inherit;
   font-size: 19px;
   font-weight: bold;
+}
+.home > .hand-drawn-button {
+  margin-bottom: 8px;
 }
 .expand-more-button {
   width: auto;
@@ -90,6 +100,7 @@ code {
   align-items: center;
   list-style: none;
   padding: 0;
+  margin-top: 0;
 }
 .navigation > ul > li {
   padding: 8px 0;
@@ -99,8 +110,40 @@ code {
   width: auto;
   font-size: 30px;
 }
-.inline-link {
-  color: currentColor;
+.toggle-theme-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 30px;
+  width: 70px;
+  padding: 0;
+  position: relative;
+}
+.toggle-theme-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #222;
+  transition: 0.3s;
+}
+.toggle-theme-button span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+.toggle-theme-description {
+  margin: 5px 0 8px 0;
+  font-size: 19px;
 }
 /* --- projects ------------------------------------------------------------ */
 .project {
@@ -128,6 +171,7 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 72px;
 }
 .footer-links {
   display: flex;
@@ -172,39 +216,6 @@ button {
   box-shadow: 3px 3px 0 #222;
   transform: translate(4px, 4px);
 }
-
-.toggle-theme-button {
-  background: 0;
-  border: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  height: 40px;
-  width: 100px;
-  position: relative;
-  /* border: 1px solid rgba(255, 255, 255, 0); */ /* TODO: neede? */
-}
-.toggle-theme-button span:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #222;
-  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
-  transition: 0.3s;
-}
-.toggle-theme-button span:nth-child(2) {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
-  transition: 0.3s;
-}
 /* --- dark-mode ----------------------------------------------------------- */
 body.dark-mode {
   background-color: #222;
@@ -219,14 +230,10 @@ body.dark-mode .toggle-theme-button span:nth-child(1) {
   opacity: 0.87;
 }
 body.dark-mode .toggle-theme-button span:nth-child(2) {
-  left: 65px;
+  left: 45px;
   background-color: #222;
 }
 /* --- todo ---------------------------------------------------------------- */
 .hidden {
   display: none;
-}
-/* --- testing ------------------------------------------------------------- */
-.top-header {
-  /* border-bottom: 1px solid currentColor; */
 }
