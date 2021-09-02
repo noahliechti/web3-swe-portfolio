@@ -31,6 +31,7 @@ body {
   height: 68px;
   padding-top: 8px;
   transition: top 0.3s, background-color 0.3s;
+  z-index: 2;
 }
 .top-header * {
   display: inline;
@@ -85,14 +86,24 @@ code {
   transform: translate(-50%, -50%);
   color: currentColor;
   transition: opacity 1s;
+  z-index: 0;
 }
 /* --- navigation ---------------------------------------------------------- */
 .navigation {
+  position: fixed;
+  width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
+  z-index: 1;
+  transition: background-color 0.3s;
 }
 .navigation > ul {
   display: flex;
@@ -109,6 +120,17 @@ code {
   color: currentColor;
   width: auto;
   font-size: 30px;
+}
+.content.hidden {
+  /* can't be `display: none`, because when closing the nav it */
+  /* would jump to the top of the page */
+  visibility: hidden;
+}
+.menu-button.hidden {
+  display: none;
+}
+.navigation.hidden {
+  display: none;
 }
 .toggle-theme-button {
   background: 0;
@@ -195,7 +217,7 @@ a.hand-drawn-button {
 }
 button {
   display: block;
-  background: transparent; /* TODO: make white? */
+  background: transparent;
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -225,6 +247,9 @@ body.dark-mode {
 body.dark-mode > .top-header {
   background-color: #222;
 }
+body.dark-mode > .navigation {
+  background-color: #222;
+}
 body.dark-mode .toggle-theme-button span:nth-child(1) {
   background-color: #fff;
   opacity: 0.87;
@@ -232,8 +257,4 @@ body.dark-mode .toggle-theme-button span:nth-child(1) {
 body.dark-mode .toggle-theme-button span:nth-child(2) {
   left: 45px;
   background-color: #222;
-}
-/* --- todo ---------------------------------------------------------------- */
-.hidden {
-  display: none;
 }
