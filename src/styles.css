@@ -11,6 +11,7 @@ body {
   font-family: "Patrick Hand SC";
   font-size: 21px;
   transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  text-align: center;
 }
 .page-section {
   padding-top: 16px;
@@ -176,6 +177,7 @@ code {
   margin-bottom: 21px;
   padding: 24px 24px 48px 48px;
   height: 220px; /* TODO: make same as width? */
+  text-align: left;
 }
 .project > .links {
   display: flex;
@@ -186,9 +188,6 @@ code {
   width: auto;
   color: currentColor;
   margin-left: 8px;
-}
-#contact {
-  text-align: center;
 }
 /* --- footer -------------------------------------------------------------- */
 .footer {
@@ -281,12 +280,6 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   }
   .content {
     padding: 0 80px;
-  }
-  section.page-section {
-    text-align: center;
-  }
-  .project {
-    text-align: left;
   }
 }
 
