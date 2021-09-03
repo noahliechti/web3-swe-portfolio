@@ -187,6 +187,9 @@ code {
   color: currentColor;
   margin-left: 8px;
 }
+#contact {
+  text-align: center;
+}
 /* --- footer -------------------------------------------------------------- */
 .footer {
   display: flex;
@@ -257,4 +260,44 @@ body.dark-mode .toggle-theme-button span:nth-child(1) {
 body.dark-mode .toggle-theme-button span:nth-child(2) {
   left: 45px;
   background-color: #222;
+}
+
+@media (min-width: 600px) {
+  body {
+    margin: 0 64px 24px 64px;
+  }
+  .top-header {
+    padding-top: 40px;
+    background-color: transparent;
+  }
+  .menu-button {
+    margin-right: 52px;
+  }
+  .logo {
+    margin-left: 64px;
+  }
+  .content {
+    padding: 0 80px;
+  }
+  section.header {
+    /* text-align: center; */
+  }
+}
+@media (min-width: 1200px) {
+  .project-containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .project {
+    min-width: 205px;
+    width: calc((100% - 300px) / 3);
+  }
+}
+
+@media (min-width: 1800px) {
+  body {
+    margin: 0 20% 24px 20%;
+  }
 }

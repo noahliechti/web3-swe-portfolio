@@ -1,8 +1,8 @@
 let bodyElm = document.querySelector("body");
 let prevPos = window.pageYOffset;
 
-window.addEventListener("scroll", hideMenuAndIcon, false);
-window.addEventListener("storage", saveCurrentThemeToLocalStorage, false);
+document.addEventListener("scroll", hideMenuAndIcon, false);
+document.addEventListener("storage", saveCurrentThemeToLocalStorage, false);
 
 function hideMenuAndIcon() {
   let currentPos = window.pageYOffset;
@@ -11,7 +11,8 @@ function hideMenuAndIcon() {
     document.querySelector(".top-header").style.top = "0";
   } else {
     // user scrolled down -> hide menu
-    document.querySelector(".top-header").style.top = "-76px";
+    // document.querySelector(".top-header").style.top = "-76px";
+    document.querySelector(".top-header").style.top = "-108px";
   }
   if (currentPos > 10) {
     // user scrolls down 10px or more -> hide icon
