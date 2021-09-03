@@ -12,7 +12,7 @@ body {
   font-size: 21px;
   transition: background-color 0.3s, color 0.3s, fill 0.3s;
 }
-.header {
+.page-section {
   padding-top: 16px;
 }
 .inline-link {
@@ -261,13 +261,16 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   left: 45px;
   background-color: #222;
 }
-
+/* --- responsive design --------------------------------------------------- */
 @media (min-width: 600px) {
   body {
     margin: 0 64px 24px 64px;
   }
   .top-header {
     padding-top: 40px;
+    background-color: transparent;
+  }
+  body.dark-mode > .top-header {
     background-color: transparent;
   }
   .menu-button {
@@ -279,11 +282,29 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   .content {
     padding: 0 80px;
   }
-  section.header {
-    /* text-align: center; */
+  section.page-section {
+    text-align: center;
+  }
+  .project {
+    text-align: left;
+  }
+}
+
+@media (min-width: 900px) {
+  #contact > p,
+  .about-me-content {
+    margin: 0 17%;
   }
 }
 @media (min-width: 1200px) {
+  #contact > p,
+  .about-me-content {
+    margin: 0 22%;
+  }
+  html {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .project-containers {
     display: flex;
     flex-direction: row;
@@ -292,12 +313,5 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   }
   .project {
     min-width: 205px;
-    width: calc((100% - 300px) / 3);
-  }
-}
-
-@media (min-width: 1800px) {
-  body {
-    margin: 0 20% 24px 20%;
   }
 }
