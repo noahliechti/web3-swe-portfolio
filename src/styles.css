@@ -5,7 +5,7 @@ body {
   height: 100%;
 }
 body {
-  margin: 0 24px 24px 24px;
+  margin: 0 24px 24px 36px;
   color: #222;
   fill: #222;
   font-family: "Patrick Hand SC";
@@ -262,6 +262,10 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   left: 45px;
   background-color: #222;
 }
+#contact > p,
+.about-me-content {
+  margin: 0 10%;
+}
 /* --- responsive design --------------------------------------------------- */
 @media (min-width: 600px) {
   body {
@@ -282,6 +286,10 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   }
   .content {
     padding: 0 80px;
+  }
+  #contact > p,
+  .about-me-content {
+    margin: 0;
   }
 }
 
