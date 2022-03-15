@@ -183,7 +183,7 @@ code {
   border: 3px solid currentColor;
   margin-bottom: 21px;
   padding: 24px 24px 48px 48px;
-  height: 220px; /* TODO: make same as width? */
+  height: 220px;
   text-align: left;
 }
 .project > .links {
@@ -297,8 +297,11 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 24px;
   }
   .project {
-    min-width: 205px;
+    flex-basis: 320px;
+    flex-grow: 1;
+    margin-bottom: 0;
   }
 }
