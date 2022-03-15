@@ -245,10 +245,10 @@ body.dark-mode {
   color: #fff;
   opacity: 0.87;
 }
-body.dark-mode > .top-header {
+body.dark-mode > .container > .top-header {
   background-color: #222;
 }
-body.dark-mode > .navigation {
+body.dark-mode > .container > .navigation {
   background-color: #222;
 }
 body.dark-mode .toggle-theme-button span:nth-child(1) {
@@ -272,7 +272,7 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
     padding-top: 40px;
     background-color: transparent;
   }
-  body.dark-mode > .top-header {
+  body.dark-mode > .container > .top-header {
     background-color: transparent;
   }
   .menu-button {
