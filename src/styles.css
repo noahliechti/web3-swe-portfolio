@@ -3,15 +3,20 @@
 html,
 body {
   height: 100%;
+  min-width: 320px;
 }
 body {
-  margin: 0 24px 24px 36px;
+  padding: 0 24px 24px 24px;
   color: #222;
   fill: #222;
   font-family: "Patrick Hand SC";
   font-size: 21px;
   transition: background-color 0.3s, color 0.3s, fill 0.3s;
   text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 .page-section {
   padding-top: 16px;
@@ -30,6 +35,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  max-width: 1200px;
+  margin: auto;
   top: 0;
   left: 0;
   right: 0;
@@ -81,14 +88,12 @@ code {
   margin-bottom: 8px;
 }
 .expand-more-button {
-  width: auto;
+  margin: auto;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: 16px;
   height: 48px;
   padding: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: currentColor;
   transition: opacity 1s;
   z-index: 0;
@@ -261,7 +266,7 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   margin: 0 10%;
 }
 /* --- responsive design --------------------------------------------------- */
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   body {
     margin: 0 64px 24px 64px;
   }
@@ -281,23 +286,8 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   .content {
     padding: 0 80px;
   }
-  #contact > p,
-  .about-me-content {
-    margin: 0;
-  }
-}
-
-@media (min-width: 900px) {
-  #contact > p,
-  .about-me-content {
-    margin: 0 17%;
-  }
 }
 @media (min-width: 1200px) {
-  #contact > p,
-  .about-me-content {
-    margin: 0 22%;
-  }
   html {
     max-width: 1200px;
     margin: 0 auto;
