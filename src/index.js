@@ -6,8 +6,9 @@ document.addEventListener("storage", saveCurrentThemeToLocalStorage, false);
 
 function hideMenuAndIcon() {
   let currentPos = window.pageYOffset;
-  if (prevPos > currentPos) {
-    // user scrolled up -> show menu
+
+  if (prevPos > currentPos || prevPos < 0 || currentPos < 0) {
+    // user scrolled up -> show menu (prevents "bounce-back" movement to hide menu)
     document.querySelector(".top-header").style.top = "0";
   } else {
     // user scrolled down -> hide menu
