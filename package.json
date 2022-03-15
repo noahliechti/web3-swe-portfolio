@@ -1,13 +1,13 @@
 {
   "name": "dev-portfolio",
   "version": "0.1.0",
-  "description": "Noah's developer portfolio",
+  "description": "Noah Liechti - Developer Portfolio",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel --open chrome",
     "build": "parcel build"
   },
-  "repository": "https://github.com/NoahLiechti/dev-portfolio.git",
+  "repository": "https://github.com/noahliechti/dev-portfolio.git",
   "author": "Noah Liechti",
   "license": "MIT",
   "dependencies": {
