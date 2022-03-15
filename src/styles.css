@@ -191,6 +191,9 @@ code {
   color: currentColor;
   margin-left: 8px;
 }
+.project-title {
+  font-size: 1.5em;
+}
 /* --- footer -------------------------------------------------------------- */
 .footer {
   display: flex;
