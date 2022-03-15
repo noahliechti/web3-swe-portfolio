@@ -3,7 +3,7 @@
 <!--![Current Version](https://img.shields.io/github/package-json/v/NoahLiechti/dev-portfolio?style=social)-->
 [![Licence](https://img.shields.io/badge/License-MIT-green.svg?style=social)](https://github.com/NoahLiechti/dev-portfolio/blob/main/LICENSE)
 [![Live Demo](https://img.shields.io/badge/Live&nbsp;Preview-Click&nbsp;Me-green.svg?style=social)](https://trusting-williams-929684.netlify.app)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8e44bafe-1d33-4389-90c5-ec2034a30dc6/deploy-status)](https://app.netlify.com/sites/trusting-williams-929684/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d759cd8d-4bbc-4016-b7fd-d6ff353d133c/deploy-status)](https://app.netlify.com/sites/youthful-jepsen-d75291/deploys)
 ## Status
 🚧 The project is under construction. 
 ## Introduction
