@@ -8,7 +8,7 @@
     "build": "parcel build"
   },
   "repository": "https://github.com/noahliechti/dev-portfolio.git",
-  "author": "Noah Liechti <noah.liechti@gmail.com>",
+  "author": "Noah Liechti",
   "license": "MIT",
   "dependencies": {
     "eslint-config-airbnb": "^18.2.1",
