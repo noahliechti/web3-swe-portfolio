@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
 /* --- global -------------------------------------------------------------- */
 html,
 body {
@@ -74,10 +73,10 @@ ul {
   flex-direction: column;
   align-items: center;
 }
-.strong {
+.title {
   display: block;
   font-weight: bold;
-  font-size: 66px;
+  font-size: 64px;
 }
 code {
   font: inherit;
@@ -216,7 +215,6 @@ a.hand-drawn-button {
   display: block;
   width: 98px;
   text-decoration: none;
-  /* width: fit-content; TODO: doesn't work in FF */
 }
 button {
   display: block;
@@ -261,9 +259,9 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   left: 45px;
   background-color: #222;
 }
-#contact > p,
-.about-me-content {
-  margin: 0 10%;
+#contact > p {
+  max-width: 327px;
+  margin: auto;
 }
 /* --- responsive design --------------------------------------------------- */
 @media (min-width: 900px) {
