@@ -170,6 +170,17 @@ code {
   margin: 5px 0 8px 0;
   font-size: 19px;
 }
+.navigation-links {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+.navigation-links > a {
+  width: auto;
+  color: currentColor;
+  margin: 0 2px;
+  height: 60px;
+}
 /* --- projects ------------------------------------------------------------ */
 .project {
   display: flex;
@@ -198,15 +209,6 @@ code {
   justify-content: center;
   align-items: center;
   margin-top: 72px;
-}
-.footer-links {
-  display: flex;
-}
-.footer-links > a {
-  width: auto;
-  color: currentColor;
-  margin: 0 2px;
-  height: 60px;
 }
 .footer > small {
   font-size: 19px;
