@@ -1,7 +1,7 @@
 let bodyElm = document.querySelector("body");
 let donateBtnElm = document.querySelector(".js-donate-button");
 let prevPos = window.pageYOffset;
-const SHORT_SCREEN = 400;
+const SHORT_SCREEN = 440;
 
 document.addEventListener("DOMContentLoaded", init, false);
 document.addEventListener("scroll", hideMenuAndIcon, false);
