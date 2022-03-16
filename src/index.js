@@ -1,15 +1,22 @@
 let bodyElm = document.querySelector("body");
 let prevPos = window.pageYOffset;
-const isShortScreen = document.body.clientHeight < 360;
 
 document.addEventListener("DOMContentLoaded", hideExpandIcon, false);
 document.addEventListener("scroll", hideMenuAndIcon, false);
 document.addEventListener("storage", saveCurrentThemeToLocalStorage, false);
+window.addEventListener("resize", hideExpandIcon, true);
 
 function hideExpandIcon() {
+  const isShortScreen = document.body.clientHeight < 370;
+  let currentPos = window.pageYOffset;
+
   if (isShortScreen) {
     document.querySelector(".expand-more-button").style.opacity = 0;
     document.querySelector(".expand-more-button").style.visibility = "hidden";
+  } else if (currentPos < 11) {
+    // user is within the first 10px of the site -> show icon
+    document.querySelector(".expand-more-button").style.opacity = 1;
+    document.querySelector(".expand-more-button").style.visibility = "visible";
   }
 }
 
@@ -24,7 +31,7 @@ function hideMenuAndIcon() {
     // document.querySelector(".top-header").style.top = "-76px";
     document.querySelector(".top-header").style.top = "-108px";
   }
-  if (currentPos > 10 || isShortScreen) {
+  if (currentPos > 10) {
     // user scrolls down 10px or more -> hide icon
     document.querySelector(".expand-more-button").style.opacity = 0;
     document.querySelector(".expand-more-button").style.visibility = "hidden";
