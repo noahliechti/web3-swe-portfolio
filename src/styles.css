@@ -267,6 +267,7 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  column-gap: 16px;
 }
 #contact {
   flex-basis: 327px;

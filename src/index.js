@@ -1,13 +1,44 @@
 let bodyElm = document.querySelector("body");
+let donateBtnElm = document.querySelector(".js-donate-button");
 let prevPos = window.pageYOffset;
 
-document.addEventListener("DOMContentLoaded", hideExpandIcon, false);
+document.addEventListener("DOMContentLoaded", init, false);
 document.addEventListener("scroll", hideMenuAndIcon, false);
 document.addEventListener("storage", saveCurrentThemeToLocalStorage, false);
 window.addEventListener("resize", hideExpandIcon, true);
 
+function init() {
+  donateBtnElm.addEventListener("click", () => {
+    if (typeof window.ethereum !== "undefined") {
+      window.ethereum
+        .request({
+          method: "eth_requestAccounts",
+        })
+        .then((account) => makeTransaction(account));
+    }
+  });
+  hideExpandIcon();
+}
+
+function makeTransaction(account) {
+  if (Number(ethereum.networkVersion) === 1) {
+    const transactionParameters = {
+      to: "0x08A5551231eC36ca85b93c87f78C6caEbfBbbBeB",
+      from: account[0], // TODO: should I use ethereum.selectedAddress?
+      value: (2 * 10 ** 15).toString(16), // 0.002 ETH
+    };
+
+    window.ethereum
+      .request({
+        method: "eth_sendTransaction",
+        params: [transactionParameters],
+      })
+      .catch((err) => console.log(err));
+  }
+}
+
 function hideExpandIcon() {
-  const isShortScreen = document.body.clientHeight < 370;
+  const isShortScreen = document.body.clientHeight < 380;
   let currentPos = window.pageYOffset;
 
   if (isShortScreen) {
