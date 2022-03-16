@@ -1,8 +1,16 @@
 let bodyElm = document.querySelector("body");
 let prevPos = window.pageYOffset;
 
+document.addEventListener("DOMContentLoaded", hideExpandIcon, false);
 document.addEventListener("scroll", hideMenuAndIcon, false);
 document.addEventListener("storage", saveCurrentThemeToLocalStorage, false);
+
+function hideExpandIcon() {
+  if (document.body.clientHeight < 350) {
+    document.querySelector(".expand-more-button").style.opacity = 0;
+    document.querySelector(".expand-more-button").style.visibility = "hidden";
+  }
+}
 
 function hideMenuAndIcon() {
   let currentPos = window.pageYOffset;
