@@ -5,7 +5,7 @@
 [![Live Demo](https://img.shields.io/badge/Live&nbsp;Preview-Click&nbsp;Me-green.svg?style=social)](https://trusting-williams-929684.netlify.app)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d759cd8d-4bbc-4016-b7fd-d6ff353d133c/deploy-status)](https://app.netlify.com/sites/youthful-jepsen-d75291/deploys)
 ## Status
-🚧 The project is under construction. 
+🚧 The documentation is under construction. 
 ## Introduction
 ### Features
 <!--e.g registration-->
