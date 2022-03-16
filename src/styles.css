@@ -1,6 +1,7 @@
 /* --- global -------------------------------------------------------------- */
 html,
 body {
+  scroll-behavior: smooth;
   height: 100%;
   min-width: 320px;
 }
@@ -179,11 +180,12 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 3px solid currentColor;
+  border: 6px solid currentColor;
   margin-bottom: 21px;
   padding: 24px 24px 48px 48px;
   height: 220px;
   text-align: left;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 .project > .links {
   display: flex;
@@ -230,7 +232,7 @@ button {
   padding: 8px 16px;
   align-self: center;
   color: currentColor;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-radius: 255px / 15px;
   box-shadow: 7px 7px 0 currentColor;
   border: solid 6px currentColor;
   margin: 40px auto;
@@ -301,7 +303,5 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
     flex-basis: 320px;
     flex-grow: 1;
     margin-bottom: 0;
-    border: solid 6px currentColor;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   }
 }
