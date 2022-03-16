@@ -1,6 +1,7 @@
 let bodyElm = document.querySelector("body");
 let donateBtnElm = document.querySelector(".js-donate-button");
 let prevPos = window.pageYOffset;
+const SHORT_SCREEN = 400;
 
 document.addEventListener("DOMContentLoaded", init, false);
 document.addEventListener("scroll", hideMenuAndIcon, false);
@@ -38,7 +39,7 @@ function makeTransaction(account) {
 }
 
 function hideExpandIcon() {
-  const isShortScreen = document.body.clientHeight < 380;
+  const isShortScreen = document.body.clientHeight < SHORT_SCREEN;
   let currentPos = window.pageYOffset;
 
   if (isShortScreen) {
@@ -52,7 +53,7 @@ function hideExpandIcon() {
 }
 
 function hideMenuAndIcon() {
-  const isShortScreen = document.body.clientHeight < 380;
+  const isShortScreen = document.body.clientHeight < SHORT_SCREEN;
   let currentPos = window.pageYOffset;
 
   if (prevPos > currentPos || prevPos < 0 || currentPos < 0) {
