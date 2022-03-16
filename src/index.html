@@ -37,6 +37,10 @@
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#000000" />
     <meta name="msapplication-TileColor" content="#000000" />
     <meta name="theme-color" content="#000000" />
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
   </head>
   <body>
     <script>
@@ -111,6 +115,7 @@
         <ul>
           <li><a href="#home" onclick="toggleMenu()">Home</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#donate" onclick="toggleMenu()">Donate</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
         <button
@@ -312,20 +317,33 @@
             </div>
             <!-- <button class="hand-drawn-button">Show More</button> -->
           </section>
-          <section id="contact" class="page-section">
-            <h1>Say Hello</h1>
-            <p>
-              My inbox is always open for new opportunities. I'll try my best to
-              get back to you!
-            </p>
-            <a
-              class="hand-drawn-button"
-              href="mailto:noah.liechti@gmail.com?subject=Get%20in%20touch&body=Hello%20Noah"
-              target="_blank"
-              rel="noopener"
-              >Get In Touch</a
-            >
-          </section>
+          <div class="multi-col">
+            <section id="donate" class="page-section">
+              <h1>Donate</h1>
+              <p>Blablabla! You can also send it manually to noahliechti.eth</p>
+              <a
+                class="hand-drawn-button"
+                href="mailto:noah.liechti@gmail.com?subject=Get%20in%20touch&body=Hello%20Noah"
+                target="_blank"
+                rel="noopener"
+                >Donate ETH</a
+              >
+            </section>
+            <section id="contact" class="page-section">
+              <h1>Say Hello</h1>
+              <p>
+                My inbox is always open for new opportunities. I'll try my best
+                to get back to you!
+              </p>
+              <a
+                class="hand-drawn-button"
+                href="mailto:noah.liechti@gmail.com?subject=Get%20in%20touch&body=Hello%20Noah"
+                target="_blank"
+                rel="noopener"
+                >Get In Touch</a
+              >
+            </section>
+          </div>
         </main>
         <footer class="footer">
           <small>designed & built by Noah Liechti</small>

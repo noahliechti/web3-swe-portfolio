@@ -77,7 +77,7 @@ ul {
 .title {
   display: block;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 62px;
 }
 code {
   font: inherit;
@@ -261,11 +261,24 @@ body.dark-mode .toggle-theme-button span:nth-child(2) {
   left: 45px;
   background-color: #222;
 }
-#contact > p {
-  max-width: 327px;
-  margin: auto;
-}
 /* --- responsive design --------------------------------------------------- */
+.multi-col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#contact {
+  flex-basis: 327px;
+}
+#donate {
+  flex-basis: 327px;
+}
+@media (min-width: 1000px) {
+  .multi-col {
+    justify-content: space-around;
+  }
+}
 @media (min-width: 900px) {
   body {
     margin: 0 64px 24px 64px;

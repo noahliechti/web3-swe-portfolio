@@ -1,12 +1,13 @@
 let bodyElm = document.querySelector("body");
 let prevPos = window.pageYOffset;
+const isShortScreen = document.body.clientHeight < 360;
 
 document.addEventListener("DOMContentLoaded", hideExpandIcon, false);
 document.addEventListener("scroll", hideMenuAndIcon, false);
 document.addEventListener("storage", saveCurrentThemeToLocalStorage, false);
 
 function hideExpandIcon() {
-  if (document.body.clientHeight < 350) {
+  if (isShortScreen) {
     document.querySelector(".expand-more-button").style.opacity = 0;
     document.querySelector(".expand-more-button").style.visibility = "hidden";
   }
@@ -23,7 +24,7 @@ function hideMenuAndIcon() {
     // document.querySelector(".top-header").style.top = "-76px";
     document.querySelector(".top-header").style.top = "-108px";
   }
-  if (currentPos > 10) {
+  if (currentPos > 10 || isShortScreen) {
     // user scrolls down 10px or more -> hide icon
     document.querySelector(".expand-more-button").style.opacity = 0;
     document.querySelector(".expand-more-button").style.visibility = "hidden";
