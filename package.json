@@ -4,18 +4,18 @@
   "description": "Noah Liechti - Developer Portfolio",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --open chrome",
+    "start": "parcel --open brave",
     "build": "parcel build"
   },
   "repository": "https://github.com/noahliechti/dev-portfolio.git",
   "author": "Noah Liechti",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "@parcel/packager-raw-url": "2.3.2",
+    "@parcel/transformer-webmanifest": "2.3.2",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0"
-  },
-  "devDependencies": {
+    "eslint-plugin-prettier": "^3.4.0",
     "parcel": "^2.0.0-rc.0"
   }
 }
