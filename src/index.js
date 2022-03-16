@@ -52,6 +52,7 @@ function hideExpandIcon() {
 }
 
 function hideMenuAndIcon() {
+  const isShortScreen = document.body.clientHeight < 380;
   let currentPos = window.pageYOffset;
 
   if (prevPos > currentPos || prevPos < 0 || currentPos < 0) {
@@ -62,7 +63,7 @@ function hideMenuAndIcon() {
     // document.querySelector(".top-header").style.top = "-76px";
     document.querySelector(".top-header").style.top = "-108px";
   }
-  if (currentPos > 10) {
+  if (currentPos > 10 || isShortScreen) {
     // user scrolls down 10px or more -> hide icon
     document.querySelector(".expand-more-button").style.opacity = 0;
     document.querySelector(".expand-more-button").style.visibility = "hidden";
